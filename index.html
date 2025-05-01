@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Naldy's Journey</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Gochi+Hand&family=Nunito&family=Quicksand&display=swap');
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Nunito', sans-serif;
+      background: linear-gradient(to bottom, #C6E7FF, #D4F6FF, #FBFBFB);
+      color: #333;
+    }
+
+    nav {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background-color: #FFDDAE;
+      padding: 10px 0;
+      z-index: 1000;
+      text-align: center;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    nav>a {
+      margin: 0px 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    nav>a:hover {
+        padding: 5px;
+        border: 2px solid #f0b665;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    }
+
+    section {
+      min-height: 80vh;
+      padding: 50px 20px 60px 20px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h1, h2 {
+      font-family: 'Gochi Hand', cursive;
+      margin-bottom: 20px;
+    }
+
+    .home>h1 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 3rem;
+      color: #333;
+    }
+
+    .home>p {
+      font-size: 1.2rem;
+      max-width: 550px;
+      text-align: center;
+    }
+
+    .illustration {
+      max-width: 150px;
+      max-height: 150px;
+      margin-bottom: 30px;
+    }
+
+    .section-content {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .text-content {
+      max-width: 400px;
+    }
+    .text-content>p {
+      font-size: 1.1rem;
+      max-width: 500px;
+      text-align: center;
+    }
+
+    ul {
+      list-style: circle;
+      padding: 0;
+    }
+
+    li {
+      padding-top: 15px;
+    }
+
+    .background {
+        position: absolute;
+        z-index: -1;
+        pointer-events: none;
+    }
+    .cloud1 {
+        opacity: 0.8;
+        width: 500px;
+        height: 300px;
+        top: 10svh;
+        right: 10svh;
+    }
+    .cloud2 {
+        opacity: 0.5;
+        width: 500px;
+        height: 300px;
+        top: 80svh;
+        left: 10svh;
+    }
+    .cloud2a {
+        opacity: 0.5;
+        width: 500px;
+        height: 300px;
+        top: 150svh;
+        right: 10svh;
+    }
+    .cloud3 {
+        opacity: 0.8;
+        width: 500px;
+        height: 300px;
+        top: 190svh;
+        left: 15svh;
+    }
+    .cloud4 {
+        opacity: 0.2;
+        width: 500px;
+        height: 300px;
+        top: 270svh;
+        left: 10svh;
+    }
+    .cloud5 {
+        opacity: 0.3;
+        width: 500px;
+        height: 300px;
+        top: 330svh;
+        right: 10svh;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#target">Target</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <section id="home" class="home">
+    <div class="illustration"><img src="./assets/hi-stickman.png" alt="home"></div>
+    <h1>Hi ! I'm Naldy</h1>
+    <p>I'm beginner in programming world.<br>Currently on loooooooooong journey to become a competent programmer. I will update this page based on my projects.<br>Hopefully, some days, I have the nerve to call myself a competent programmer and delete that first sentence.
+    </p>
+  </section>
+  <section id="about">
+    <div class="section-content">
+      <img src="./assets/welcome.png" alt="About Me" height="250px" width="250px">
+      <div class="text-content">
+        <h2 style="text-align: left;">About Me</h2>
+        <p style="text-align: left;">
+          Before I embark on this journey, I'm already on the way of different path, I'm graduated from Diponegoro University with Diploma Degree in Urban and Regional Planning.<br /><br />
+          With that being said, I'm quite proficient in utilizing tools like ArcGIS and ERMapper. I'm also trained as a surveyor especially in Urban and Regional Planning fields.<br /><br />
+          I really love mathematic since I was in middle-school. I also really enjoy myself when trying to solve problem through code. I've never been happier in my life. That's why I made the decision to embark on this journey to become a programmer.<br /><br />
+          <!-- I'm currently learning to be a fullstack developer golang through bootcamp that's provided by Kodacademy. -->
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="target">
+    <div class="illustration"><img src="./assets/what.png" alt="Target" width="400px" height="300px"></div>
+    <h2>Target</h2>
+    <ul>
+      <li>Become fullstack developer (GoLang)</li>
+      <li>Become game developer (with tools like Godot/Unity)</li>
+      <li>Keep Growing! Slow but sure, one line code at a time~</li>
+    </ul>
+  </section>
+  <section id="contact">
+    <img src="./assets/show.png" alt="contact me" width="320px" height="250px">
+    <h2>Contact</h2>
+    <p style="text-align: center;">
+      You can visit me on my GitHub Pages: <a href="github.com/mdavindarinaldy" style="text-decoration: none;color: #333;">github.com/mdavindarinaldy</a><br />
+      Reach me by email: mdavindarinaldy@gmail.com</a>
+    </p>
+  </section>
+  <img src="./assets/cloud13.png" alt="cloud" class="background cloud1">
+  <img src="./assets/cloud13.png" alt="cloud" class="background cloud2">
+  <img src="./assets/cloud13.png" alt="cloud" class="background cloud2a">
+  <img src="./assets/cloud13.png" alt="cloud" class="background cloud3">
+  <img src="./assets/cloud15.png" alt="cloud" class="background cloud4">
+  <img src="./assets/cloud15.png" alt="cloud" class="background cloud5">
+</body>
+</html>
